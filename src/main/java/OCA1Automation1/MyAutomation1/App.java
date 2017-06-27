@@ -13,6 +13,6 @@ public class App
     {
     	Date date = new Date();
     	Calendar.getInstance().get(Calendar.MILLISECOND);
-    	System.out.println( "Hello World!" );
+    	System.out.println( "Hello World! Test" );
     }
 }
