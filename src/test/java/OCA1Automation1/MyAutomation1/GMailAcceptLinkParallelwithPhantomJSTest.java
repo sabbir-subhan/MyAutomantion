@@ -28,6 +28,7 @@ public class GMailAcceptLinkParallelwithPhantomJSTest {
 	  WebDriver driver=browserSetup();
 		  
 		  driver.get("https://mail.google.com/");
+		  System.out.println("Title of the webpage :"+driver.getTitle());
 		  try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e1) {
@@ -130,6 +131,7 @@ public class GMailAcceptLinkParallelwithPhantomJSTest {
 	  WebDriver driver=browserSetup();
 		  
 		  driver.get("https://mail.google.com/");
+		  System.out.println("Title of the webpage :"+driver.getTitle());
 		  try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e1) {
