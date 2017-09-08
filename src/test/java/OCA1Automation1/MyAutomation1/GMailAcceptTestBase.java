@@ -28,21 +28,21 @@ public class GMailAcceptTestBase {
 				+ Thread.currentThread().getId());
 	  HighlightElement highlight=new HighlightElement();
 	  //Enter Email address
-	  WebElement googleEmail=driver.findElement(By.xpath("//*[@id='Email']"));
+	  WebElement googleEmail=driver.findElement(By.xpath("//*[@id='identifierId']"));
 	  highlight.highlightElement(driver, googleEmail);
 	  googleEmail.sendKeys("ssubhan@noggin.com.au");
 	  
 	  //Click Next button
-	  WebElement googleNextButton=driver.findElement(By.xpath("//*[@id='next']"));
+	  WebElement googleNextButton=driver.findElement(By.xpath("//*[@id='identifierNext']/content/span"));
 	  highlight.highlightElement(driver, googleNextButton);
 	  googleNextButton.click();
 	  
 	  //Now find and enter google password
-	  WebElement googlePassword=driver.findElement(By.xpath("//*[@id='Passwd']"));
+	  WebElement googlePassword=driver.findElement(By.xpath("//*[@id='password']/div[1]/div/div[1]/input"));
 	  highlight.highlightElement(driver,googlePassword);
 	  googlePassword.sendKeys("different #77 thought house");
 	  //Now find and click sign in button
-	  WebElement googleSigninButton=driver.findElement(By.xpath("//*[@id='signIn']"));
+	  WebElement googleSigninButton=driver.findElement(By.xpath("//*[@id='passwordNext']/div[2]"));
 	  highlight.highlightElement(driver,googleSigninButton);
 	  googleSigninButton.click();
 	  

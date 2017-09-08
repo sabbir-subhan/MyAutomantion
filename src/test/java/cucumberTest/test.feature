@@ -11,17 +11,15 @@
 #Background: List of steps run before each of the scenarios
 #""" (Doc Strings)
 #| (Data Tables)
-#@ (Tags/Labels):To group Scenarios 
+#@ (Tags/Labels):To group Scenarios
 #<> (placeholder)
 #""
 ## (Comments)
-
 #Sample Feature Definition Template
 @tag
 Feature: Title of your feature
-	I want to use this template for my feature file
+  I want to use this template for my feature file
 
-Scenario: cucumber setup
-
-Given sample feature file is ready
-When I run the feature file-new
+  Scenario: cucumber setup
+    Given sample feature file is ready
+    When I run the feature file-new
